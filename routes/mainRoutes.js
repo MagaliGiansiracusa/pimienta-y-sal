@@ -5,6 +5,6 @@ const mainController = require("../controllers/mainController");
 
 router.get("/", mainController.index);
 
-router.get("/detalleMenu", mainController.detalleMenu);
+router.get("/detalleMenu/:menuId", mainController.detalleMenu);
 
 module.exports = router;
